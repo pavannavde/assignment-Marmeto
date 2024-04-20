@@ -1,0 +1,209 @@
+@import url("https://fonts.google.com/specimen/Inter");
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: Intern;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:50%;
+  padding: 10px;
+  gap: 30px;
+
+}
+.BigImg{
+  width:80%;
+  height: 600px;
+}
+.left>div{
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ gap: 20px;
+}
+.smallImg{
+  width:100px;
+  height:100px;
+  border-radius: 8px;
+  padding: 5px;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+.extraProp{
+  border: 2px solid rgb(180, 51, 180);
+}
+.smallImg:hover{
+  border: 2px solid rgb(180, 51, 180);
+}
+.right{
+  width: 50%;
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+}
+.titleDiv{
+  border-bottom: 2px solid rgba(243, 243, 243, 1);
+  margin-left: 30px;
+}
+.pTag{
+  color:rgb(167, 163, 163);
+  font-size: 18px;
+  padding: 0;
+}
+.priceDiv{
+  border-bottom: 2px solid rgba(243, 243, 243, 1);
+  padding: 20px;
+  margin-left: 30px;
+}
+.priceDiv>div{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap:30px;
+  margin-bottom: 0;
+}
+.priceDiv>div>h2{
+  color:rgba(58, 73, 128, 1);
+  margin: 0;
+}
+.priceDiv>div>span{
+  font-size: 18px;
+  color: rgb(245, 121, 224);
+}
+.priceDiv>p{
+  text-decoration: line-through;
+  font-size: 20px;
+  color:rgb(167, 163, 163)   ;
+  margin: 0;
+}
+.colorDiv{
+  border-bottom: 2px solid rgba(243, 243, 243, 1);
+  padding-bottom: 20px;
+  margin-left: 30px;
+}
+.colorDiv>div{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top:20px;
+}
+.colorDiv>div>div{
+  width: 70px;
+  height: 70px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hide{
+  display: none;
+}
+.sizeDiv{
+  border-bottom: 2px solid rgba(243, 243, 243, 1);
+  padding-bottom: 20px;
+  margin-left: 30px;
+
+}
+.radioBtns{
+  display: flex;
+  justify-content:flex-start ;
+  flex-wrap: wrap;
+  align-items: center;
+  gap:20px;
+}
+.radioBtns>div{
+  width:auto;
+  background-color:rgb(228, 223, 223);
+  padding: 8px 15px;
+  color: gray;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:5px;
+}
+.radioBtns>div:hover{
+  color:rgba(58, 73, 128, 1);
+  background-color: rgb(217, 219, 236);
+}
+.btns{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  gap:20px;
+  padding: 30px 0px;
+}
+.count{
+  display: flex;
+  justify-content:space-around;
+  min-width:200px;
+  color:rgba(58, 73, 128, 1);
+  background-color:rgb(228, 223, 223);
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.btns>button{
+  width:300px;
+  padding:15px;
+  border-radius: 25px;
+  border: none;
+  background-color: rgba(58, 73, 128, 1);
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  cursor: pointer;
+}
+.msg{
+  background-color: rgba(231, 248, 183, 1);
+  width:90%;
+  padding: 8px;
+  font-weight: 800;
+  font-size: 18px;
+  border-radius: 5px;
+  display: none;
+}
+.discription{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30px;
+}
+.discription>p{
+  color:rgba(163, 163, 163, 1);
+  font-size: 18px;
+}
+
+@media only screen and (max-width:768px) {
+
+  .container{
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 0;
+  }
+  .left{
+    width:100%
+  }
+  .right{
+    width:100%;
+    align-items: flex-start;
+  }
+  .BigImg{
+    height: 500px;
+  }
+  
+}
